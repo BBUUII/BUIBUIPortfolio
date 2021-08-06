@@ -18,14 +18,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- <script src="script/luxy.min.js"></script> -->
+<script src="../script/luxy.min.js"></script>
 </head>
 <body>
-    <div class="luxy">
+    <div id="luxy">
     <div class="header">
         <div class="jump">
-        <a class="about link" href="">about</a>
-        <a class="works link" href="">works</a>
+            <a class="about link" href="../html/about.html">about</a>
+            <a class="works link" href="../index.html">works</a>
         </div>
     <a class="twitterlink" href="https://twitter.com/BUIBUIIIIII">
     <img class="twitterlogo" src="../image/2021 Twitter logo - black.png" alt="">
@@ -34,7 +34,7 @@
 <!-- <div class="icon">
     <img class="iconimg" src="../image/icon/iconR1.png" alt=""> -->
 </div>
-</div>
+<!-- </div> -->
 
 <div class="icon">
     <img class="iconimg" src="../image/icon/iconR1.png" alt="">
@@ -70,5 +70,15 @@ Unity</p>
 好きなゲーム：「原神」「アークナイツ」</p>
 <div class="end"></div>
 </div>
+</div>
+
+<script>
+    luxy.init({
+        wrapper: '#luxy',
+        targets : '.luxy-el',
+        wrapperSpeed:  0.08
+    });    
+ </script>
+ 
 </body>
 </html>
